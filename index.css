@@ -16,14 +16,14 @@ body {
     align-items: center;
     margin-top: 30px;
     padding: 5px 5px;
-    border: 1px solid black;
+
     
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-
+    font-weight: 500;
 }
 
 .navbar a:hover {
@@ -139,13 +139,19 @@ Experience section
 
 #skills {
     text-align: center;
+
+}
+
+#skills h2 {
     text-decoration: underline;
     margin-top: 100px;
 }
 
-
 #projects {
     text-align: center;
+}
+
+#projects h2 {
     text-decoration: underline;
     margin-top: 100px;
 }
