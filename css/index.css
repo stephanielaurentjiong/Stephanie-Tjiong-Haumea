@@ -182,6 +182,10 @@ Larger Mobile
     /* ----------
     Skills 
     ---------- */
+
+    #Skills ul {
+        padding-left: 0;
+    }
     
 
     /* ----------
