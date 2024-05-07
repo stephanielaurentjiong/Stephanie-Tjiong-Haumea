@@ -77,3 +77,35 @@ messageForm.addEventListener('submit', event => {
 
 body.appendChild(footerSect);
 
+fetch('https://api.github.com/users/stephanielaurentjiong/repos')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(response.status); //This error will throw if the url fetch is wrong;  It only handles errors related to the HTTP response status codes.
+        } 
+        return response.json();
+    })
+    .then(data => {
+        // Handle JSON data
+        let repositories = data;
+        console.log(repositories);
+
+        // Display repositories array in list
+        const projectSection = document.querySelector('section#Projects');
+        const projectList = projectSection.querySelector('ul');
+
+        // Looping over each repository in the 'repositories' array
+        for (let i = 0;  i < repositories.length; i++) {
+            // Creating a new list item (li) element
+            let project = document.createElement('li');
+    
+            // Set project var's innerText to the current array element's with name property
+            // Setting the text content of the list item to the name of the current repository
+            project.innerText = repositories[i].name;
+    
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => console.log('Error'))
+
+
+ 
