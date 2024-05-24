@@ -91,7 +91,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+    min-height: 100vh; 
     text-align: center;
 }
 
@@ -99,28 +99,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Optional: Set a max-width if needed */
+    width: 100%; 
 }
 
 #MessageForm label, 
 #MessageForm input, 
 #MessageForm textarea, 
 #MessageForm button {
-    width: 100%; /* Make form elements take the full width of the form */
-    margin: 0.625rem 0; /* Space out the form elements, 0.625rem = 10px if root font-size is 16px */
+    width: 100%; 
+    margin: 0.625rem 0; 
 }
 
 #MessageForm input[type="text"], 
 #MessageForm input[type="email"] {
-    height: 2.5rem; /* Set the desired height for the text and email input fields, 2.5rem = 40px if root font-size is 16px */
-    padding: 0.625rem; /* Add padding for better text input experience, 0.625rem = 10px if root font-size is 16px */
-    box-sizing: border-box; /* Ensure padding doesn't increase the overall width */
+    height: 2.5rem; 
+    padding: 0.625rem; 
+    box-sizing: border-box; 
 }
 
 #MessageForm textarea {
-    height: 9.375rem; /* Set the desired height for the text area, 9.375rem = 150px if root font-size is 16px */
-    padding: 0.625rem; /* Add padding for better text input experience, 0.625rem = 10px if root font-size is 16px */
-    box-sizing: border-box; /* Ensure padding doesn't increase the overall width */
+    height: 9.375rem; 
+    padding: 0.625rem; 
+    box-sizing: border-box; 
 }
 
 #Messages {
@@ -128,28 +128,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 50vh; /* Adjust as needed to ensure proper spacing */
+    min-height: 50vh; 
     text-align: center;
     padding: 1rem;
 }
 
 #Messages ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     padding-left: 0;
     margin: 0;
-    width: 100%; /* Make ul take the full width of the container */
-    max-width: 37.5rem; /* Adjust as needed, 37.5rem = 600px if root font-size is 16px */
+    width: 100%; 
+    max-width: 37.5rem; 
 }
 
 #Messages li {
-    background-color: #f0f0f0; /* Example background color for the list items */
-    padding: 1rem; /* Example padding */
-    margin: 0.625rem 0; /* Space out the list items, 0.625rem = 10px if root font-size is 16px */
+    background-color: #f0f0f0; 
+    padding: 1rem; 
+    margin: 0.625rem 0; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0.5rem; /* Optional: Add border-radius for better aesthetics */
-    box-sizing: border-box; /* Ensure padding doesn't increase the overall width */
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
 }
 
 
@@ -429,11 +429,11 @@ Desktop
     ---------- */
 
     #MessageForm form {
-        max-width: 70%; /* Adjust width for tablets and small desktops */
+        max-width: 70%; 
     }
 
     #Messages ul {
-        max-width: 70%; /* Adjust width for small tablets */
+        max-width: 70%; 
     }
     /* ----------
     Footer 
@@ -540,11 +540,11 @@ Desktop
     Messages
     ---------- */
     #MessageForm form {
-        max-width: 37.5rem; /* Max width set to 37.5rem (600px) */
+        max-width: 37.5rem; 
     }
 
     #MessageForm form {
-        max-width: 37.5rem; /* Max width set to 37.5rem (600px) */
+        max-width: 37.5rem; 
     }
     /* ----------
     Footer 
