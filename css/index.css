@@ -47,7 +47,7 @@ body {
     flex-direction: column;
 }
 
-#Experience, #Skills, #Projects, #Footer {
+#Experience, #Skills, #Projects, #MessageForm, #Footer {
     align-items: center;
 }
 
@@ -56,15 +56,101 @@ body {
     margin-bottom: 4em;
 }
 
-#exp-btn, #skill-btn, #project-btn, #connect-btn {
+#exp-btn, #skill-btn, #project-btn, #contact-btn, #connect-btn {
     text-align: center;
     text-decoration: underline;
-    margin-top: 2em;
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
 #Skills, #Projects p {
     text-align: center;
 } 
+
+
+#Projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; 
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#Projects li {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+}
+
+#MessageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+}
+
+#MessageForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+}
+
+#MessageForm label, 
+#MessageForm input, 
+#MessageForm textarea, 
+#MessageForm button {
+    width: 100%; 
+    margin: 0.625rem 0; 
+}
+
+#MessageForm input[type="text"], 
+#MessageForm input[type="email"] {
+    height: 2.5rem; 
+    padding: 0.625rem; 
+    box-sizing: border-box; 
+}
+
+#MessageForm textarea {
+    height: 9.375rem; 
+    padding: 0.625rem; 
+    box-sizing: border-box; 
+}
+
+#Messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; 
+    text-align: center;
+    padding: 1rem;
+}
+
+#Messages ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin: 0;
+    width: 100%; 
+    max-width: 37.5rem; 
+}
+
+#Messages li {
+    background-color: #f0f0f0; 
+    padding: 1rem; 
+    margin: 0.625rem 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem; 
+    box-sizing: border-box; 
+}
 
 
 /* -----------
@@ -101,11 +187,34 @@ Mobile
     /* ----------
     Skills 
     ---------- */
-    
+    #Skills ul {
+        padding-left: 0;
+    }
 
     /* ----------
     Projects
     ---------- */
+    #Projects ul {
+        grid-template-columns: repeat(1, 1fr); /* 1 square per row */
+    }
+
+    /* ------------- 
+    Messages 
+    ------------ */
+
+    #MessageForm form {
+        max-width: 90%; /
+    }
+
+    #Messages ul {
+        max-width: 90%; 
+    }
+
+    #MessageForm input[type="text"], 
+    #MessageForm input[type="email"], 
+    #MessageForm textarea {
+        height: auto; /* Allow inputs and textarea to grow based on content */
+    }
 
     /* ----------
     Footer 
@@ -126,7 +235,7 @@ Larger Mobile
 
 @media only screen and (min-width: 426px) {
     body {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin: 0;
     }
 
@@ -180,17 +289,32 @@ Larger Mobile
     }
 
     /* ----------
-    Skills 
+    Skills      
     ---------- */
 
     #Skills ul {
         padding-left: 0;
+        margin: 0;
     }
-    
 
     /* ----------
     Projects
     ---------- */
+
+    #Projects ul {
+        grid-template-columns: repeat(2, 1fr); /
+    }
+
+    /* ----------
+    Messages
+    ---------- */
+    #MessageForm form {
+        max-width: 80%; 
+    }
+
+    #Messages ul {
+        max-width: 80%; 
+    }
 
     /* ----------
     Footer 
@@ -234,7 +358,6 @@ Desktop
     #abt-sect-1 {
         order: 2;
     }
-
     
     #abt-sect-2 {
         order: 1;
@@ -297,6 +420,21 @@ Desktop
     Projects
     ---------- */
 
+    #Projects ul {
+        grid-template-columns: repeat(3, 1fr); /* 3 squares per row */
+    }
+
+    /* ----------
+    Messages
+    ---------- */
+
+    #MessageForm form {
+        max-width: 70%; 
+    }
+
+    #Messages ul {
+        max-width: 70%; 
+    }
     /* ----------
     Footer 
     ---------- */
@@ -394,6 +532,20 @@ Desktop
     Projects
     ---------- */
 
+    #Projects ul {
+        grid-template-columns: repeat(4, 1fr); /* 4 squares per row */
+    }
+
+    /* ----------
+    Messages
+    ---------- */
+    #MessageForm form {
+        max-width: 37.5rem; 
+    }
+
+    #MessageForm form {
+        max-width: 37.5rem; 
+    }
     /* ----------
     Footer 
     ---------- */

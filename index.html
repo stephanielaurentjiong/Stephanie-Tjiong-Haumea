@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="js/index.js" defer></script>
 
 <!-- ========= 
         Header section
@@ -19,7 +20,7 @@
             <a class="nav" href="#exp-btn">Experience</a>
             <a class="nav" href="#skill-btn" >Skills</a>
             <a class="nav" href="#project-btn">Projects</a>
-            <a class="nav" href="#connect-btn">Connects</a> 
+            <a class="nav" href="#contact-btn">Contact Me!</a> 
         </nav>
     </header>
 
@@ -28,7 +29,7 @@
         ========= -->
     <main>
         <div class="intro">
-            <h1>Hai, I'm Stephanie. <br>How are you today?</h1>
+            <h1>Hai, I'm Stephanie Tjiong. <br>How are you today?</h1>
         </div>
 
     <!-- ========= 
@@ -100,20 +101,24 @@
             </div>
         </section>
 
-        <section id="Skills">
-            <h2 id="skill-btn">Skills</h2>
-            <ul>  
-            </ul>
-        </section>
+        <!-- the div is not dependent on anything, can be deleted -->
+        <div class="skills-projects"> 
+            <section id="Skills">
+                <h2 id="skill-btn">Skills</h2>
+                <ul>  
+                </ul>
+            </section>
 
-        <section id="Projects">
-            <h2 id="project-btn">Projects</h2>
-            <p>Comming soon!</p>
-        </section>
+            <section id="Projects">
+                <h2 id="project-btn">Projects</h2>
+                <ul id="project-list">
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <section>
-        <h2>Leave a Message</h2>
+    <section id="MessageForm">
+        <h2 id="contact-btn">Leave a Message</h2>
         <form name="leave_message">
             <label for="usersName">Name:</label>
             <input type="text" name="usersName" id="usersName" required="true">
@@ -128,7 +133,7 @@
     </section>
 
     <section id="Messages">
-        <h2>Messages</h2>
+        <h2>Your Messages</h2>
         <ul></ul>
     </section>
     
@@ -144,6 +149,6 @@
         </div>
     </footer> 
 
-    <script src="js/index.js"></script>
+    
     </body>
 </html>
